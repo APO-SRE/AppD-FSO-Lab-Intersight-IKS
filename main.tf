@@ -70,7 +70,7 @@ module "iks_cluster" {
     name                = var.cluster_name
     action              = "Deploy"
     wait_for_completion = false
-    worker_nodes        = 3
+    worker_nodes        = 2
     load_balancers      = 5
     worker_max          = 20
     control_nodes       = 1
