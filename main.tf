@@ -8,7 +8,7 @@ provider "intersight" {
 # Modules ------------------------------------------------------------------------------------------
 module "iks_cluster" {
   source  = "terraform-cisco-modules/iks/intersight"
-  version = "2.1.2"
+  version = "2.2.1"
 
   ip_pool = {
     use_existing = true
