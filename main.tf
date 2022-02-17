@@ -17,18 +17,18 @@ module "iks_cluster" {
 
   sysconfig = {
     use_existing = true
-    name         = "fso-sre-test-02-sys-config-policy"
+    name         = "APPD-FSO-IKS-NODE-OS-CONFIG"
   }
 
   k8s_network = {
     use_existing = true
-    name         = "fso-sre-test-02-network-policy"
+    name         = "APPD-FSO-IKS-NETWORK-CIDR-DEMO"
   }
 
   # Version policy.
   versionPolicy = {
     useExisting = true
-    policyName  = "FSO-Kube-1.19.15-iks.3"
+    policyName  = "APPD-FSO-K8S-VERSION-DEMO"
   }
 
   tr_policy = {
@@ -62,7 +62,7 @@ module "iks_cluster" {
 
   instance_type = {
     use_existing = true
-    name         = "FSO-VM-Instance-4-40-16"
+    name         = "APPD-FSO-VM-INSTANCE-TYPE-IKS-DEMO"
   }
 
   # Cluster information.
@@ -71,8 +71,8 @@ module "iks_cluster" {
     action              = "Deploy"
     wait_for_completion = false
     worker_nodes        = 2
-    load_balancers      = 5
-    worker_max          = 20
+    load_balancers      = 1
+    worker_max          = 3
     control_nodes       = 1
     ssh_user            = "iksadmin"
     ssh_public_key      = var.ssh_key
