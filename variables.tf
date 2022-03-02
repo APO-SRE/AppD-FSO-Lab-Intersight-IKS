@@ -27,8 +27,8 @@ variable "ssh_user" {
 }
 
 variable "ssh_key" {
-  type        = string
   description = "SSH Public Key to be used for IKS node login."
+  type        = string
 }
 
 variable "vc_password" {

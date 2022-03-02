@@ -1,9 +1,10 @@
-# Required Varilables
+# Required Variables.
 apikey       = ""
 vc_password  = ""
 ssh_user     = "iksadmin"
 ssh_key      = ""
-# Optional Variables
+
+# Optional Variables.
 tags = [
   {
     "key" : "Environment"
@@ -11,7 +12,7 @@ tags = [
   },
   {
     "key" : "Owner"
-    "value" : "Cisco SRE and AppDynamics Cloud Channel Sales Teams"
+    "value" : "Cisco APO Cross-Architecture and AppDynamics Cloud Channel Sales Teams"
   },
   {
     "key" : "Project"
