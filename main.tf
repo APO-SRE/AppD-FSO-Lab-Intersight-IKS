@@ -68,7 +68,7 @@ module "iks_cluster" {
   # Cluster information.
   cluster = {
     name                = var.cluster_name
-    action              = "Deploy"
+    action              = var.action_type
     wait_for_completion = false
     worker_nodes        = 2
     load_balancers      = 1

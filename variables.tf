@@ -44,5 +44,11 @@ variable "tags" {
 
 variable "cluster_name" {
   description = "Name of IKS Cluster."
-  type = string
+  type        = string
+}
+
+variable "action_type" {
+  description = "Cluster action: 'Unassign', 'Deploy', etc."
+  type        = string
+  default     = "Unassign"
 }
