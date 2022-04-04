@@ -7,7 +7,7 @@ ssh_key      = ""
 # Optional Variables.
 tags = [
   {
-    "key" : "Environment"
+    "key" : "EnvironmentHome"
     "value" : "Cisco One Lab"
   },
   {

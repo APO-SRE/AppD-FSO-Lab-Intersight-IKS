@@ -48,7 +48,7 @@ variable "cluster_name" {
 }
 
 variable "action_type" {
-  description = "Cluster action: 'Unassign', 'Deploy', etc."
+  description = "Cluster action: 'Unassign', 'Deploy', 'Delete', etc."
   type        = string
   default     = "Unassign"
 }
